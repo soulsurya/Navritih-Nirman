@@ -4,7 +4,162 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- <script
+      src="https://kit.fontawesome.com/627ff447cb.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "project-primary": "#F2994A",
+              "project-white": "#F8F9FE",
+              "project-black": "#040214",
+              "project-gray": "#4E4E53",
+              "project-gray-light": "#86868B",
+            },
+            fontFamily: {
+              Montserrat: ["Montserrat", "sans-serif"],
+              Poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
     <title>Navritih Nirman</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="px-20 py-2">
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <a href="#" class="flex items-center">
+          <img
+            src="./assets/icons/logo.svg"
+            class="mr-3 h-6 sm:h-10"
+            alt="Navritih Nirman"
+          />
+        </a>
+        <button
+          data-collapse-toggle="mobile-menu"
+          type="button"
+          class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
+          aria-controls="mobile-menu-2"
+          aria-expanded="false"
+        >
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+          <ul
+            class="flex flex-col p-4 mt-4 rounded-lg borde md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-project-primary text-lg"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-project-black text-lg hover:"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-project-black text-lg"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-project-black text-lg"
+                >About Us</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-project-white text-lg bg-project-primary rounded-lg"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <footer
+      class="h-40 flex justify-center items-center bg-project-black text-white flex-col gap-y-4 text-lg fixed bottom-0 left-0 right-0"
+    >
+      <div class="tracking-wide flex gap-2">
+        <span> Copyright 2022</span>
+        <span> | </span>
+        <span>All right reserved</span>
+        <span>| </span>
+        <span>Navrithi Nirman</span>
+      </div>
+      <div class="flex gap-10">
+        <a href=""
+          ><i
+            class="fa fa-facebook rounded-full bg-project-primary bg-opacity-10 p-4 px-5"
+            aria-hidden="true"
+          ></i
+        ></a>
+        <a href=""
+          ><i
+            class="fa fa-twitter rounded-full bg-project-primary bg-opacity-10 p-4"
+            aria-hidden="true"
+          ></i
+        ></a>
+        <a href=""
+          ><i
+            class="fa fa-instagram rounded-full bg-project-primary bg-opacity-10 p-4"
+            aria-hidden="true"
+          ></i
+        ></a>
+        <a href=""
+          ><i
+            class="fa fa-youtube-play rounded-full bg-project-primary bg-opacity-10 p-4"
+            aria-hidden="true"
+          ></i
+        ></a>
+      </div>
+      <div></div>
+    </footer>
+    <script src="./scripts/script.js"></script>
+    <script>
+      console.log("Hello world!");
+    </script>
+  </body>
 </html>
