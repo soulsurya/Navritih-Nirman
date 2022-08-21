@@ -3,7 +3,7 @@ var hero = document.getElementById("hero");
 var header = document.getElementById("header");
 var menu = document.getElementById('mobile-menu')
 function myFunction() {
-    if (window.pageYOffset > header.offsetHeight) {
+    if (window.pageYOffset > 1.4 * header.offsetHeight) {
         header.classList.add("make-sticky");
         header.classList.remove("header-bg");
     } else {
@@ -46,7 +46,17 @@ var swiper = new Swiper(".mySwiper2", {
     loop: true,
 });
 function scrollToTop() {
-    console.log('inside function')
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleSeeMore(elementId) {
+    let element = document.getElementById(`${elementId}`);
+    let button = document.getElementsByClassName(`${elementId}`)
+    if (button[0].innerHTML.toUpperCase() == 'Show Details'.toUpperCase()) {
+        button[0].innerHTML = 'Hide Details'
+    } else {
+        button[0].innerHTML = 'Show Details'
+    }
+    element.classList.toggle('hidden')
 }

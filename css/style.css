@@ -18,17 +18,11 @@ html {
   background-color: rgba(246, 247, 254, 0);
 }
 .make-sticky {
-  position: -webkit-sticky;
-  position: sticky !important;
-  top: 0 !important;
   width: 100%;
   z-index: 100;
   backdrop-filter: blur(8px);
   color: white !important;
-  background: #313131 !important;
-  /* padding-top: 4px !important; */
-  /* padding-bottom: 4px !important; */
-  /* height: 10vh !important; */
+  background: #040214 !important;
 }
 .swiper {
   width: 100%;
