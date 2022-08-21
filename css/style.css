@@ -58,10 +58,6 @@ html {
 .swiper-slide-active {
   filter: blur(0);
 }
-/* .swiper-3d .swiper-slide-shadow-left,
-.swiper-3d .swiper-slide-shadow-right {
-  background-image: none;
-} */
 .swiper-button-next {
   right: 60px !important ;
 }
