@@ -60,3 +60,21 @@ function toggleSeeMore(elementId) {
     }
     element.classList.toggle('hidden')
 }
+
+
+// share website handler
+const shareData = {
+    title: 'Navritih NirmanN',
+    text: 'Make your dreams Come true...',
+    url: window.location.href
+}
+
+const btn = document.getElementById('share-button');
+
+btn.addEventListener('click', async () => {
+    try {
+        await navigator.share(shareData);
+    } catch (err) {
+        alert('Something went wrong while sharing!')
+    }
+});
