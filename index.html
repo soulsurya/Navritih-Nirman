@@ -50,12 +50,12 @@
 </head>
 
 <body class="scroll-smooth font-Montserrat">
-  <header class="fixed text-project-black header-bg top-0 z-50 flex justify-between items-center lg:block h-auto text-primary-black" id="header">
-    <nav class="px-6 sm:px-10 md:16 lg:px-28 w-screen pt-3 z-20 bg-inherit py-4">
+  <header class="fixed text-project-black header-bg top-0 z-50 flex justify-between items-center lg:block h-auto" id="header">
+    <nav class="px-6 sm:px-10 md:16 lg:px-28 w-screen pt-3 z-20 bg-inherit py-4 bottom-0">
       <div class="flex flex-col justify-between items-center lg:flex-row lg:items-start">
         <div class="flex justify-between w-full lg:w-max">
           <a href="https://navritihnirman.in" class="flex items-center">
-            <img src="./assets/icons/navritih.png" class="mr-3 h-8 sm:h-10" alt="Navritih Nirman" />
+            <img src="./assets/icons/navritih.png" class="mr-3 mt-1 h-8 sm:h-10" alt="Navritih Nirman" />
           </a>
           <button onclick="toggleMenu()" type="button"
             class="inline-flex items-center ml-3 justify-center text-sm text-project-primary rounded-lg lg:hidden"
@@ -68,9 +68,9 @@
             </svg>           
           </button>
         </div>
-        <div class="lg:relative hidden h-[90vh] top-[9vh] lg:top-0 lg:h-full lg:block pt-8 lg:pt-0 w-full lg:w-auto" id="mobile-menu">
+        <div class="lg:relative hidden h-[100vh] top-[9vh] lg:top-0 lg:h-full lg:block pt-8 lg:pt-0 w-full lg:w-auto" id="mobile-menu">
           <ul
-            class="flex flex-col lg:flex-row gap-4 lg:gap-3 xl:gap-4 font-semibold mx-10 md:mx-28 lg:mx-0 bg-inherit">
+            class="flex lg:text-project-white flex-col lg:flex-row gap-4 lg:gap-3 xl:gap-4 font-semibold mx-10 md:mx-28 lg:mx-0 bg-inherit">
             <li>
               <a href="https://navritihnirman.in" class="block py-2 pr-4 pl-3 text-project-primary text-base text-center" aria-current="page">Home</a>
             </li>
@@ -122,17 +122,16 @@
           </a>
       </div>
     </section>
-    <section id="hero" class="grid-bg overflow-x-hidden lg:h-screen">
-      <div class="flex h-full flex-col lg:flex-row overflow-hidden pt-[18vh] lg:pt-[10vh] xl:pt-0">
-        <div class="lg:w-1/2 px-6 sm:px-10 md:px-16 lg:pr-0 lg:pl-28 h-full flex justify-center -mt-8 flex-col">
-          <img  src="./assets/images/cloud.webp" class="hidden lg:block w-1/2" alt="Navritih Nirman design">
-          <div class="flex flex-col ">
-            <h1 class="text-4xl sm:text-6xl md:text-6xl font-bold leading-tight lg:leading-snug">Helping you build your dream.</h1>
-            <p class="mt-2 lg:mt-4">
+    <section id="hero" class="overflow-x-hidden lg:h-screen">
+      <div class="flex items-center h-[100vh] flex-col lg:flex-row overflow-hidden lg:pt-[10vh] xl:pt-0 text-project-white">
+        <div class="text-center px-6 sm:px-10 md:px-16  h-[95%] md:h-full flex justify-center items-center -mt-8 flex-col absolute right-0 left-0 z-20">
+          <div class="flex flex-col sm:w-3/4 lg:w-1/2">
+            <h1 class="text-4xl sm:text-6xl md:text-6xl font-bold leading-tight lg:leading-snug">Where Innovation Meets Reality.</h1>
+            <p class="mt-2 lg:mt-4 text-center">
               We promise an expert team of Design & Construction Professionals with the flexibility needed on any
               construction project – Commercial and Residential properties.
             </p>
-            <div class="flex gap-4 lg:gap-8 mt-6 lg:mt-8">
+            <div class="flex items-center justify-center gap-4 lg:gap-8 mt-6 lg:mt-8">
               <div><a href="/conatct.html"
                   class="py-2 px-4 xl:py-3 xl:px-8  bg-project-primary xl:text-lg font-medium text-white rounded-md cursor-pointer  hover:bg-[#ec8327] transition-all duration-300 ease-linear">Contact
                   Us</a></div>
@@ -140,8 +139,8 @@
             </div>
           </div>
         </div>
-        <div class="-mr-40 h-full mt-6 pb-6">
-          <img src="./assets/images/hero-img.webp" class="h-full" alt="Navritih Nirman Building">
+        <div class="w-full h-screen absolute right-0 left-0 top-0 bottom-0">
+          <img src="./assets/images/hero-img.jpg" class="h-full object-cover w-full" alt="Navritih Nirman Building">
         </div>
       </div>
     </section>
@@ -214,7 +213,7 @@
         <img  src="./assets/icons/highlight.svg" alt="icon">
       </div>
       <div class="mt-12 grid md:grid-cols-2 xl:grid-cols-3 gap-x-10 gap-y-10 items-start text-center">
-        <div class="bg-white rounded-lg overflow-hidden shadow-md h-full">
+        <a class="bg-white rounded-lg overflow-hidden shadow-md h-full hover:scale-[102%] duration-150" href="/services.html" >
           <img class="w-full aspect-[3/2]" src="./assets/images/service-1.jpg" alt="Building Planning">
           <div class="flex flex-col items-center gap-y-3 py-4 px-4  lg:py-4 lg:px-6">
             <h3 class="text-lg font-semibold text-project-gray">Building Design, 2D and 3D floor plans, 3D elevation
@@ -222,8 +221,8 @@
             <div class="h-1 bg-project-primary rounded-md w-2/5"></div>
             <p class="">Navritih Nirman produce 2D/3D Floor Plans with specific clients’ requirements. Navritih Nirman designs a whole range of 2D/3D Floor Plans for various sectors particularly Resedential buildings, Apartments, Commercial buildings like hospitals, schools and many more.</p>
           </div>
-        </div>
-        <div class="bg-white rounded-lg overflow-hidden shadow-md h-full">
+        </a>
+        <a  href="/services.html"  class="bg-white rounded-lg overflow-hidden shadow-md h-full hover:scale-[102%] duration-150">
           <img class="w-full aspect-[3/2]" src="./assets/images/service-2.jpg" alt="Building Planning">
           <div class="flex flex-col items-center gap-y-3 py-4 px-4  lg:py-4 lg:px-6">
             <h3 class="text-lg font-semibold text-project-gray">Architectural Drawing and Structural Drawings,
@@ -231,8 +230,8 @@
             <div class="h-1 bg-project-primary rounded-md w-2/5"></div>
             <p class="">Accurate construction cost estimates are crucial to successful builds.WE at Navritih Nirman provide quality estimate of your construction with sound structural elements.</p>
           </div>
-        </div>
-        <div class="bg-white rounded-lg overflow-hidden shadow-md h-full">
+        </a>
+        <a  href="/services.html"  class="bg-white rounded-lg overflow-hidden shadow-md h-full hover:scale-[102%] duration-150">
           <img class="w-full aspect-[3/2]" src="./assets/images/service-3.jpg" alt="Building Planning">
           <div class="flex flex-col items-center gap-y-3 py-4 px-4  lg:py-4 lg:px-6">
             <h3 class="text-lg font-semibold text-project-gray">Interior and Exterior Design, Complete site work with
@@ -240,8 +239,8 @@
             <div class="h-1 bg-project-primary rounded-md w-2/5"></div>
             <p class="">We at Navritih Nirman have more than 05 years expertise of delivering Turnkey interiors solution to individuals and corporate clients to there respective needs and create functional and user friendly environment with aesthetic look.</p>
           </div>
-        </div>
-       <div class="bg-white rounded-lg overflow-hidden shadow-md h-full">
+        </a>
+       <a  href="/services.html"  class="bg-white rounded-lg overflow-hidden shadow-md h-full hover:scale-[102%] duration-150">
           <img class="w-full aspect-[3/2]" src="./assets/images/service-4.jpg" alt="Building Planning">
           <div class="flex flex-col items-center gap-y-3 py-4 px-4  lg:py-4 lg:px-6">
             <h3 class="text-lg font-semibold text-project-gray">Vaastu Consultancy and Construction Work</h3>
@@ -249,8 +248,8 @@
             <p class="">Vastu is the link that connects man to nature. Everything comprises five essential elements: FIRE, WATER, EARTH, SPACE, and AIR.
               Designing of any residential as well as commercial projects are covered well within the VAASTU criteria.</p>
           </div>
-        </div>
-       <div class="bg-white rounded-lg overflow-hidden shadow-md h-full">
+        </a>
+       <a  href="/services.html"  class="bg-white rounded-lg overflow-hidden shadow-md h-full hover:scale-[102%] duration-150">
           <img class="w-full aspect-[3/2]" src="./assets/images/service-5.jpg" alt="Building Planning">
            <div class="flex flex-col items-center gap-y-3 py-4 px-4  lg:py-4 lg:px-6">
             <h3 class="text-lg font-semibold text-project-gray">Renovation & Patna Regional Development Authority Work
@@ -258,8 +257,8 @@
             <div class="h-1 bg-project-primary rounded-md w-2/5"></div>
             <p class="">Everyone wants to build homes with perfection. It is the ultimate desire of any person. Providing best Engineer, Contractor, Supervisor etc. is our primary concern for any projects either new or already built one.</p>
           </div>
-        </div>
-        <div class="bg-white rounded-lg overflow-hidden shadow-md h-full">
+        </a>
+        <a  href="/services.html"  class="bg-white rounded-lg overflow-hidden shadow-md h-full hover:scale-[102%] duration-150">
           <img class="w-full aspect-[3/2]" src="./assets/images/service-5.jpg" alt="Building Planning">
            <div class="flex flex-col items-center gap-y-3 py-4 px-4  lg:py-4 lg:px-6">
             <h3 class="text-lg font-semibold text-project-gray">Landscaping
@@ -267,7 +266,7 @@
             <div class="h-1 bg-project-primary rounded-md w-2/5"></div>
             <p class="">The good building is not one that hurts the landscape, but one which makes the landscape more beautiful than it was before the building was built. Taking care of  each and every specific details in and around your building is well taken care of at Navritih Nirman.</p>
           </div>
-        </div>
+        </a>
 
       </div>
     </section>
