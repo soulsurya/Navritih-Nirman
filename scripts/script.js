@@ -78,3 +78,13 @@ btn.addEventListener('click', async () => {
         alert('Something went wrong while sharing!')
     }
 });
+
+//Image galleries
+const gallery2 = new Viewer(document.getElementById('images2'));
+const gallery4 = new Viewer(document.getElementById('images4'));
+const gallery5 = new Viewer(document.getElementById('images5'));
+const gallery6 = new Viewer(document.getElementById('images6'));
+const gallery7 = new Viewer(document.getElementById('images7'));
+const gallery8 = new Viewer(document.getElementById('images8'));
+const gallery9 = new Viewer(document.getElementById('images9'));
+const gallery11 = new Viewer(document.getElementById('images11'));
