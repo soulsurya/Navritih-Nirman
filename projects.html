@@ -616,9 +616,10 @@
       </div>
       <div class="-mt-36 bg-white mx-6 sm:mx-10 md:mx-16 lg:mx-28 rounded-lg flex overflow-hidden  lg:h-4/5  shadow-xl">
         <img class="hidden w-1/2 lg:block " src="./assets/images/building-form.webp" alt="contact-form">
-        <form class="flex-1 p-6 lg:px-10 flex justify-center gap-y-5 md:gap-y-7 flex-col text-project-black font-medium"
-          id="contactform" action="https://formsubmit.io/send/navritihnirman@gmail.com" method="POST">
+        <form class="flex-1 p-6 lg:px-10 flex justify-center gap-y-5 md:gap-y-7 flex-col text-project-black font-medium" id="contactform"
+          action="https://api.web3forms.com/submit" method="POST">
           <div class="flex flex-col gap-1">
+            <input type="hidden" name="access_key" value="KEY_HERE">
             <label class="font-medium" for="name">Name</label>
             <input
               class="border-2 border-opacity-50 focus:border-opacity-100 border-project-primary outline-none  text-sm text-project-gray focus:outline-none rounded leading-relaxed p-2 transition-all duration-300 ease-in-out"
@@ -643,10 +644,8 @@
               name="message" id="message" rows="5" required></textarea>
           </div>
           <div class="flex justify-end flex-col">
-            <input name="_formsubmit_id" type="text" style="display:none">
-            <input name="_redirect" type="hidden" id="name" value="http://127.0.0.1:5500/index.html">
-            <input
-              class="cursor-pointer bg-project-primary text-white text-lg font-medium px-4 py-2 rounded-md  hover:bg-[#ec8327] transition-all duration-300 ease-linear"
+            <input name="redirect" type="hidden" id="redirect" value="https://navritihnirman.in/thank-you.html">
+            <input class="cursor-pointer bg-project-primary text-white text-lg font-medium px-4 py-2 rounded-md  hover:bg-[#ec8327] transition-all duration-300 ease-linear"
               value="Send Message" type="submit">
           </div>
         </form>
